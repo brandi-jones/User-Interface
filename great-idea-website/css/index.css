@@ -22,7 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	/*border: 1px solid grey;*/
+	/*border: 1px solid grey; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -71,18 +71,35 @@ h1, h2, h3, h4, h5 {
 /*Top navigation and logo*/
 .navigation {
 	display: inline-block;
-	margin: 3%;
-	width: 75%;
+	margin: 0%;
+	width: 100%;
+	background-color: #bdf1f6;
+	padding: 2%;
+	
 }
 
 .navigation a {
-	padding: 5%;
+	padding: 4%;
 	text-decoration: none;
 	color: grey;
 }
 
+.navigation a:hover{
+	animation-name: hover-animation;
+	animation-duration: 3s;
+	font-weight: bold;
+	animation-iteration-count: infinite;
+}
+
+@keyframes hover-animation {
+	from {color: grey;}
+	to {color: black;}
+}
+
 .logo {
-	margin: 3% 0 0 0;
+
+	margin: 3% 0 0 4%;
+
 }
 
 
@@ -112,6 +129,19 @@ header {
 	padding: 1% 9% 1% 9%;
 	
 }
+
+#get-started:hover {
+	animation-name: animation-getstarted;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes animation-getstarted {
+	from {background-color: white;}
+	to {background-color: #bdf1f6;}
+}
+
+
 
 .big-image {
 	width: 40%;
